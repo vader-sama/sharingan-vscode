@@ -1,23 +1,91 @@
 {
   "name": "sharingan",
   "displayName": "Sharingan",
-  "description": "A Sharingan activates when you type!",
-  "version": "0.0.1",
+  "description": "Adds a Sharingan to your status bar!",
+  "version": "1.0.0",
+  "icon": "static/images/logo.png",
+  "publisher": "vader-sama",
   "engines": {
     "vscode": "^1.96.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "keywords": [
+    "naruto",
+    "mangekyou sharingan",
+    "sharingan",
+    "fun"
+  ],
+  "activationEvents": [
+    "*"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "sharingan.helloWorld",
-        "title": "Hello World"
+        "command": "extension.toggleSharingan",
+        "title": "Toggle Sharingan"
       }
-    ]
+    ],
+    "icons": {
+      "sharingan-0-deg": {
+        "description": "0 Deg",
+        "default": {
+          "fontPath": "./static/fonts/sharingan.woff",
+          "fontCharacter": "\\e900"
+        }
+      },
+      "sharingan-45-deg": {
+        "description": "45 Deg",
+        "default": {
+          "fontPath": "./static/fonts/sharingan.woff",
+          "fontCharacter": "\\e901"
+        }
+      },
+      "sharingan-90-deg": {
+        "description": "90 Deg",
+        "default": {
+          "fontPath": "./static/fonts/sharingan.woff",
+          "fontCharacter": "\\e902"
+        }
+      },
+      "sharingan-135-deg": {
+        "description": "0 Deg",
+        "default": {
+          "fontPath": "./static/fonts/sharingan.woff",
+          "fontCharacter": "\\e903"
+        }
+      },
+      "sharingan-180-deg": {
+        "description": "180 Deg",
+        "default": {
+          "fontPath": "./static/fonts/sharingan.woff",
+          "fontCharacter": "\\e904"
+        }
+      },
+      "sharingan-225-deg": {
+        "description": "225 Deg",
+        "default": {
+          "fontPath": "./static/fonts/sharingan.woff",
+          "fontCharacter": "\\e905"
+        }
+      },
+      "sharingan-270-deg": {
+        "description": "270 Deg",
+        "default": {
+          "fontPath": "./static/fonts/sharingan.woff",
+          "fontCharacter": "\\e906"
+        }
+      },
+      "sharingan-315-deg": {
+        "description": "315 Deg",
+        "default": {
+          "fontPath": "./static/fonts/sharingan.woff",
+          "fontCharacter": "\\e907"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
@@ -31,17 +99,17 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.96.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
     "@typescript-eslint/eslint-plugin": "^8.17.0",
     "@typescript-eslint/parser": "^8.17.0",
-    "eslint": "^9.16.0",
-    "typescript": "^5.7.2",
-    "ts-loader": "^9.5.1",
-    "webpack": "^5.95.0",
-    "webpack-cli": "^5.1.4",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1"
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.16.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
   }
 }
