@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "icon": "static/images/logo.png",
   "publisher": "vader-sama",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.96.0"
   },
