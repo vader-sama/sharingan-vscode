@@ -8,6 +8,10 @@
   "engines": {
     "vscode": "^1.96.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vader-sama/sharingan-vscode"
+  },  
   "categories": [
     "Other"
   ],
